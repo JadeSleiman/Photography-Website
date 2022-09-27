@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photography Portfolio Contact Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!---Header for Portfolio-->
+    <div class="HeadPort">
+		<nav>
+			<h2 class="logo">Jamba<span>Smurf</span></h2>
+			<ul>
+				<li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+				<li><a href="#" onclick="window.location.href='about.html'">About</a></li>
+				<li><a href="#" onclick="window.location.href='portfolio.html'">Portfolio</a></li>
+				<li><a href="#" onclick="window.location.href='contact.html'">Contact</a></li>
+			</ul>
+			<button onclick="window.location.href='portfolio.html'">View Portfolio</button>
+		</nav>
+	</div>
+
+    <!------Contact Me------>
+    <div class="contact-me">
+        <p>Questions? Interested in my work? Email me!</p>
+        <a href = "mailto: jade.sleiman.655@my.csun.edu" style="color: pink;">Send Email</a>
+    </div>
+
+    <!--Using "<picture>" the picture element.-->
+    <!-- the picture html element contains zero or more source elements and one img element to offer 
+        alternative versions of an image for different display/device scenarios-->
+    <div>
+        <picture>
+            <source srcset="images/logo.jpg"
+                    media="(min-width: 400px)" >
+            <img src="images/logo.jpg" class="center" />
+        </picture>
+        
+        <!-- Using "size" attribute
+            this defines the width of the input and the heigh of the seleect element. 
+            This can be used for texts or passwords.-->
+        <h2 style="padding-top: 30px;"> Please Click the drop down to select which social media you'll be using</h2>
+    <select name="Social Medias" size="5">
+        <option>Instagram</option>
+        <option>Tiktok</option>
+        <option>YouTube</option>
+        <option>Pinterest</option>
+        <option>Twitter</option>
+      </select>
+    </div>
+
+    <div>
+        <!-- Using "accept" html attribute
+    The accept attribute takes its value a comma separated list of one or more file types 
+    or unique file type specifiers describing which file types to allow-->
+    <h2 style="padding-top: 30px;"> Please insert any sound/video/image files that you want to work with!</h2>
+    <input type="file" id="soundFile" accept="audio/*" />
+    <input type="file" id="videoFile" accept="video/*" />
+    <input type="file" id="imageFile" accept="image/*" />
+    </div>
+
+
+    <!------footer start--------->
+	<footer>
+		<p>Jade Sleiman</p>
+		<p>Interested in working with me? Don't be afraid to reach out to me through the "Send Email" link above.
+			<br> or click on my linktree profile for all my socials! 
+			<br> or click one of the buttons below.
+		</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-instagram" onlick="window.location.href='https://www.instagram.com/jambasmurf/?hl=en'"></i></a>
+			<a href="#" class="fa fa-linkedin" onclick="window.location.href='https://www.linkedin.com/in/jade-sleiman-34207a1ba/'"></a>  
+			<a href="#" class="fa fa-youtube" onclick="window.location.href='https://www.youtube.com/channel/UCv4T7eKHxWdgLvZ3ll_BSLQ'"></a>  
+		</div>
+		<p class="end">CopyRight By Jade Sleiman</p>
+	</footer>
+</div>
